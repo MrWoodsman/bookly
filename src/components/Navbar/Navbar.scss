@@ -1,0 +1,13 @@
+.navbar {
+	& > .title {
+		width: 100%;
+		padding: 12px 8px;
+
+		border-bottom: 1px hsl(0, 0%, 75%) solid;
+
+		display: grid;
+		justify-items: center;
+
+		font-size: 1rem;
+	}
+}

@@ -1,0 +1,102 @@
+@import '../../variable.scss';
+
+.client_home_page {
+	& .hero {
+		background-image: url('../../assets/images/hero_background.jpg');
+		background-size: cover;
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		& .content {
+			max-width: $maxWidth;
+			color: white;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 64px;
+
+			padding: 128px 1rem;
+			& .text_wrap {
+			}
+			& h2 {
+				font-size: 1.5rem;
+				font-weight: 600;
+				text-align: center;
+			}
+			& p {
+				font-size: 0.75rem;
+				text-align: center;
+			}
+			& .add_buissnes_btn {
+				user-select: none;
+
+				color: black;
+				font-size: 0.75rem;
+
+				background-color: white;
+				padding: 0.25rem 0.75rem;
+
+				text-transform: uppercase;
+				font-weight: 700;
+
+				border: none;
+				border-radius: 1rem;
+
+				cursor: pointer;
+			}
+		}
+	}
+
+	& .info_wrap {
+		display: grid;
+		justify-items: center;
+		& .content {
+			padding: 2rem 1rem;
+
+			width: 100%;
+			max-width: $maxWidth;
+
+			display: flex;
+			flex-direction: column;
+			gap: 4rem;
+		}
+	}
+}
+
+.text_and_image_wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	column-gap: 4rem;
+	row-gap: 1rem;
+	&.reverse {
+		flex-direction: row-reverse;
+	}
+	& .image_wrap {
+		width: 250px;
+		height: 250px;
+		background: hsl(0, 0%, 95%);
+	}
+	& .text_wrap {
+		width: 300px;
+		max-width: 400px;
+		flex: auto;
+		display: flex;
+		flex-direction: column;
+		& h2 {
+			font-size: 1rem;
+			color: $acentColor;
+			font-weight: 700;
+			width: 100%;
+		}
+		& p {
+			font-size: 0.75rem;
+			font-weight: 300;
+			width: 100%;
+		}
+	}
+}

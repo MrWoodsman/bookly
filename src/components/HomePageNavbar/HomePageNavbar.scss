@@ -1,0 +1,78 @@
+@import '../../variable.scss';
+
+.home_page_navbar {
+	background-color: $acentColor;
+	height: fit-content;
+
+	display: grid;
+	justify-items: center;
+
+	& .content {
+		user-select: none;
+
+		width: 100%;
+		max-width: $maxWidth;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding: 0 16px;
+
+		& h1 {
+			font-size: 1.5rem;
+			color: white;
+		}
+		& button {
+			color: $acentColor;
+			font-size: 0.55rem;
+
+			background-color: white;
+			padding: 0.25rem 0.75rem;
+
+			text-transform: uppercase;
+			font-weight: 700;
+
+			border: none;
+			border-radius: 1rem;
+
+			cursor: pointer;
+			@media (prefers-reduced-motion: no-preference) {
+				transition: 50ms ease-in-out;
+				&:hover {
+					transform: scale(1.025);
+				}
+			}
+		}
+	}
+}
+
+.home_page_navbar {
+	&.clear {
+		position: fixed;
+		width: 100%;
+		background: rgba($acentColor, 0.75);
+		backdrop-filter: blur(12px);
+	}
+	& .content {
+		& h1 {
+			font-size: 1.5rem;
+			color: rgba(white, 1);
+		}
+		& button {
+			color: $acentColor;
+			font-size: 0.55rem;
+
+			background-color: rgba(white, 1);
+			padding: 0.25rem 0.75rem;
+
+			text-transform: uppercase;
+			font-weight: 700;
+
+			border: none;
+			border-radius: 1rem;
+
+			cursor: pointer;
+		}
+	}
+}

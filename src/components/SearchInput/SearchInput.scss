@@ -1,0 +1,31 @@
+.search_input {
+	background: white;
+
+	width: 100%;
+	max-width: 350px;
+	padding: 0.25rem 0.5rem;
+
+	border-radius: 0.25rem;
+
+	display: flex;
+	align-items: center;
+	gap: 0.25rem;
+	& img {
+		transform: translateY(-0.5px);
+
+		cursor: pointer;
+		user-select: none;
+	}
+	& input {
+		width: 100%;
+
+		border: none;
+		outline: none;
+
+		font-size: 0.75rem;
+		font-weight: 500;
+		&::placeholder {
+			user-select: none;
+		}
+	}
+}
