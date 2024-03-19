@@ -1,0 +1,29 @@
+@import '../../variable.scss';
+
+.login_or_register {
+    & .hero_wrap {
+        display: grid;
+        justify-items: center;
+        padding: 2rem 1rem;
+        & .content {
+            max-width: $maxWidth;
+
+            & h2 {
+                text-align: center;
+                font-weight: 600;
+                font-size: 1.25rem;
+            }
+
+            & .register_link {
+                font-size: .7rem;
+                text-align: center;
+            }
+
+            & .input_wrap {
+                padding: .5rem 2rem;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}

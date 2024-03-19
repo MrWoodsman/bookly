@@ -4,7 +4,7 @@ import './PagesServices.scss';
 import { api } from '../../../config';
 
 // components
-import { Navbar } from '../../components/Navbar/Navbar';
+import { Navbar } from '../../components/Navbars/Navbar/Navbar';
 
 import axios from 'axios';
 

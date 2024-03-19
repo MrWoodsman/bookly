@@ -1,6 +1,6 @@
 import './ClientHomePage.scss';
 
-import { HomePageNavbar } from '../../components/HomePageNavbar/HomePageNavbar';
+import { HomePageNavbar } from '../../components/Navbars/HomePageNavbar/HomePageNavbar';
 import { SearchInput } from '../../components/SearchInput/SearchInput';
 import { MainFooter } from '../../components/MainFooter/MainFooter';
 
