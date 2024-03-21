@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 
 import { PageServices } from "./pages/PageServices/PageServices";
 import { ClientHomePage } from "./pages/ClientHomePage/ClientHomePage";
@@ -11,12 +11,12 @@ function App() {
     <>
       {/* <PageServices /> */}
       {/* <ClientHomePage /> */}
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="" element={<ClientHomePage />} />
           <Route path="/dashboard/*" element={<UserDashboard />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }

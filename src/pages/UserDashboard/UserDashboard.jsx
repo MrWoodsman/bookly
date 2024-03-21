@@ -20,7 +20,7 @@ export function UserDashboard() {
     <Routes>
       <Route path="/" element={<p>Dashboard</p>} />
       <Route path="/login" element={<LoginOrRegister />} />
-      <Route path="/register" element={<p>Rejestracja</p>} />
+      <Route path="/register" element={<p>Rejestracjaaaaaaaaatasds</p>} />
     </Routes>
   );
 }
